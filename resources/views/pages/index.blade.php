@@ -44,18 +44,18 @@
             <table class="">
                 <table class="table datatable table-striped">
                     <thead>
-                      <tr>
-                        <th scope="col">N°</th>
-                        <th scope="col">NUMERO NATIONAL</th>
-                        <th scope="col">NOM</th>
-                        <th scope="col">POSTNOM</th>
-                        <th scope="col">PRENOM</th>
-                        <th scope="col">SEXE</th>
-                        <th scope="col">LIEU NAISSANCE</th>
-                        <th scope="col">DATE DE NAISSANCE</th>
-                        <th scope="col">NOM PERE</th>
-                        <th scope="col">NOM MERE</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">N°</th>
+                            <th scope="col">NUMERO NATIONAL</th>
+                            <th scope="col">NOM</th>
+                            <th scope="col">POSTNOM</th>
+                            <th scope="col">PRENOM</th>
+                            <th scope="col">SEXE</th>
+                            <th scope="col">LIEU NAISSANCE</th>
+                            <th scope="col">DATE DE NAISSANCE</th>
+                            <th scope="col">NOM PERE</th>
+                            <th scope="col">NOM MERE</th>
+                        </tr>
                     </thead>
                     <tbody>
                         @if (count($results) > 0 )
@@ -79,8 +79,6 @@
                                 </tr>
                             @endforeach
                         @endif
-
-
                     </tbody>
                   </table>
             </table>
