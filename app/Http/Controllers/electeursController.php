@@ -39,7 +39,8 @@ class electeursController extends Controller
      */
     public function show(Request $request)
     {
-       // $results = [];
+        try {
+        $results = [];
         if ($request->numero_national) {
             $results = electeurs::where('numero_national','LIKE','%'.$request->numero_national.'%')->get();
         }
@@ -69,6 +70,10 @@ class electeursController extends Controller
             ->where('prenom','LIKE', '%'.$request->prenom.'%')->get();
         }
         return view('pages.index', compact('results'));
+        } catch (\Throwable $th) {
+            return view('pages.index');
+        }
+
     }
 
     /**

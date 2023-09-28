@@ -58,7 +58,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @if (count($results) > 0 )
+                        @if ($results && count($results) > 0 )
                             @foreach ($results as $duplicata )
                                 <tr>
                                     <td>{{ $duplicata->id }}</td>
